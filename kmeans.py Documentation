@@ -53,22 +53,15 @@ Reads command-line arguments, validates them, and calls the kmeans function to p
 
 Usage
 To use the K-Means clustering code:
-
 Ensure you have Python installed on your system.
-
 Save the code to a Python file, e.g., kmeans.py.
-
 Run the code from the command line with the following arguments:
-
 The number of clusters (K).
 An optional maximum number of iterations.
 The path to the input data file.
 
 Note
 The code may require some adjustments depending on the format of the input data file and specific requirements.
-
 Make sure to have the required input data file available for clustering.
-
 The code includes basic validation checks for command-line arguments. Ensure the arguments provided are valid for your use case.
-
 The output will be the final cluster centroids printed with four decimal places.
