@@ -64,3 +64,13 @@ The program reads data points from the standard input, where each data point is 
 
 Conclusion
 The provided C code implements the K-Means clustering algorithm, allowing you to cluster data into groups based on similarity. You can customize the number of clusters and maximum iterations to fit your specific use case. The code is organized into functions for clarity and ease of maintenance, and it includes error handling for invalid inputs.
+
+
+Author:
+   - Yuval Shmarayhu
+
+Date:
+   - 22.10.23
+
+Disclaimer:
+   - This code is provided as-is, and any modifications or improvements are the responsibility of the user.
