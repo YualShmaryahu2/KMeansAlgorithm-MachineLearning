@@ -1,4 +1,3 @@
-
 K-Means Clustering Documentation
 This document provides documentation for the Python code implementing K-Means clustering. K-Means is a popular clustering algorithm used to group data points into K clusters, with each cluster represented by a centroid.
 
