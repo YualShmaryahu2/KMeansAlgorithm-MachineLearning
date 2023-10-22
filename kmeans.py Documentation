@@ -1,0 +1,72 @@
+
+K-Means Clustering Documentation
+This document provides documentation for the Python code implementing K-Means clustering. K-Means is a popular clustering algorithm used to group data points into K clusters, with each cluster represented by a centroid.
+
+Code Overview
+The code performs K-Means clustering on a dataset using the provided number of clusters and a specified number of iterations. It reads input data from a file, assigns data points to clusters, and iteratively updates cluster centroids until convergence or a specified maximum number of iterations is reached.
+
+Code Structure
+The code is divided into several functions and a main program. Each function serves a specific purpose within the K-Means clustering process. Below is an overview of the code structure and the purpose of each function:
+
+kmeans(K, iter, input_data):
+
+This is the main K-Means clustering function.
+It takes three arguments:
+K: The number of clusters to create.
+iter: The maximum number of iterations for the K-Means algorithm.
+input_data: The path to the input data file.
+It returns a formatted string with the final cluster centroids.
+calc_delta(new_centroids, prev_centroids):
+
+This function calculates the change in centroids between two iterations.
+It takes two lists of centroids (new and previous) and computes the maximum change in any centroid.
+Returns the maximum change as a measure of convergence.
+build_table(num_of_clusters, input_data):
+
+This function reads the initial set of centroids from the input data file.
+It takes the number of clusters (num_of_clusters) and the path to the input data file (input_data).
+Returns a list of initial centroids and the total number of data points.
+create_vector(vector):
+
+Converts a list of values into a vector of floats.
+It removes trailing commas and converts each element to a float.
+Returns the vector.
+calc_distance(vector1, vector2):
+
+Calculates the Euclidean distance between two vectors (data points).
+Takes two vectors as input and computes the Euclidean distance between them.
+Returns the Euclidean distance as a float.
+update_centroid(clusters, num_of_clusters, d):
+
+Updates the cluster centroids based on the assigned data points in each cluster.
+Takes a list of clusters, the number of clusters, and the dimensionality d.
+Returns a list of new cluster centroids.
+create_output(vectors_array):
+
+Formats the final cluster centroids and prints them.
+Takes a list of cluster centroids and prints them with four decimal places.
+main():
+
+The main program function.
+Reads command-line arguments, validates them, and calls the kmeans function to perform K-Means clustering.
+Usage
+To use the K-Means clustering code:
+
+Ensure you have Python installed on your system.
+
+Save the code to a Python file, e.g., kmeans.py.
+
+Run the code from the command line with the following arguments:
+
+The number of clusters (K).
+An optional maximum number of iterations.
+The path to the input data file.
+
+Note
+The code may require some adjustments depending on the format of the input data file and specific requirements.
+
+Make sure to have the required input data file available for clustering.
+
+The code includes basic validation checks for command-line arguments. Ensure the arguments provided are valid for your use case.
+
+The output will be the final cluster centroids printed with four decimal places.
