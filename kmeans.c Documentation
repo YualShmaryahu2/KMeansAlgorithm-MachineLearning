@@ -1,0 +1,66 @@
+Introduction
+This documentation explains the implementation of the K-Means clustering algorithm in the provided C code. K-Means is an unsupervised machine learning algorithm used to cluster data points into groups or clusters based on their similarity. The code provided here reads input data, clusters it using the K-Means algorithm, and outputs the resulting cluster centroids.
+
+Code Overview
+The code is organized into several functions to perform K-Means clustering:
+
+1. main
+The main function parses command-line arguments, reads input data, and calls the K-Means clustering function with the specified parameters.
+
+2. kmeans
+This function is the core of the K-Means clustering algorithm. It takes the number of clusters (K), the maximum number of iterations, input data, the number of data points (N), and the dimensionality of the data (dim). It initializes cluster centroids, iteratively updates them, and assigns data points to the nearest cluster centroid. This process continues until the maximum number of iterations is reached or the centroids converge.
+
+3. build_table
+This function initializes an array of cluster centroids with random or initial values. It is used to create the initial centroids.
+
+4. calc_distance
+This function calculates the Euclidean distance between two data points represented as arrays of double values. It is used to determine the similarity between data points and cluster centroids.
+
+5. update_centroid
+This function calculates the new cluster centroids by taking the mean of all data points assigned to each cluster.
+
+6. calc_delta
+This function calculates the change in centroids between iterations to check for convergence.
+
+7. create_output
+This function outputs the final cluster centroids to the console.
+
+8. createArrayfromInput
+This function converts the linked list data structure into a 2D array for efficient processing in the K-Means algorithm.
+
+9. turn_list_to_array
+This function converts a linked list of data points into an array.
+
+10. build_clusters
+This function assigns data points to the nearest cluster centroid and keeps track of the number of points in each cluster and their sum.
+
+11. free_matrices
+This function frees memory allocated for dynamic arrays.
+
+12. freeVectors
+This function frees memory allocated for linked lists used to store input data.
+
+13. copy
+This function copies the current centroids into the previous centroids for delta calculation.
+
+14. number_of_input
+This function counts the number of data points in the linked list.
+
+15. check_if_string_is_ok
+This function checks if a string contains only numerical characters, used for validating input arguments.
+
+16. free_vector
+This function frees the memory allocated for a linked list of data points.
+
+17. get_len_from_list
+This function calculates the dimensionality of data points.
+
+Usage
+To use the provided code, compile it using a C compiler, and execute the program from the command line, providing the required input. The program takes two optional command-line arguments:
+
+The number of clusters (K).
+The maximum number of iterations (default is 200).
+The program reads data points from the standard input, where each data point is represented as a comma-separated list of double values.
+
+Conclusion
+The provided C code implements the K-Means clustering algorithm, allowing you to cluster data into groups based on similarity. You can customize the number of clusters and maximum iterations to fit your specific use case. The code is organized into functions for clarity and ease of maintenance, and it includes error handling for invalid inputs.
