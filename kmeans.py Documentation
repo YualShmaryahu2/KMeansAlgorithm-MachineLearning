@@ -64,3 +64,13 @@ The code may require some adjustments depending on the format of the input data 
 Make sure to have the required input data file available for clustering.
 The code includes basic validation checks for command-line arguments. Ensure the arguments provided are valid for your use case.
 The output will be the final cluster centroids printed with four decimal places.
+
+
+Author:
+   - Yuval Shmarayhu
+
+Date:
+   - 22.10.23
+
+Disclaimer:
+   - This code is provided as-is, and any modifications or improvements are the responsibility of the user.
